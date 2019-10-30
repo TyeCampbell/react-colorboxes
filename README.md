@@ -7,9 +7,7 @@ For this project, it should show a series of 18 boxes (a box is just square div 
 
 Initially, each box should have a background color chosen from a random list of colors.
 
-When you click any box:
-
-it should change its color to a different random color.
+When boxes are clicked, it should change its color to a different random color.
 
 Here’s some inspiration:
 
