@@ -4,9 +4,11 @@ import './ColorBox.css';
 class ColorBox extends Component {
 
     render() {
+        
+        let color = 'color-' + this.props.color;
+        
         return (
-            <div className='ColorBox'>
-                <h1> This is a box. </h1>
+            <div className={`ColorBox ${color}`}>
             </div>
         )
     }

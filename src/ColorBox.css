@@ -1,5 +1,45 @@
 .ColorBox {
     width: 150px;
     height: 150px;
-    background-color: blue;
+    background-color: #F9F9F9;
+}
+
+.color-red {
+    background-color: #FF0D00; 
+}
+
+.color-orange {
+    background-color: #FF8500;
+}
+
+.color-gold {
+    background-color: #FFBB00;    
+}
+
+.color-yellow {
+    background-color: #FF3700;
+}
+
+.color-lime {
+    background-color: #C6F900;
+}
+
+.color-green {
+    background-color: #38E800;
+}
+
+.color-sky {
+    background-color: #00C1C1;
+}
+
+.color-blue {
+    background-color: #1B11D0;
+}
+
+.color-purple {
+    background-color: #6C09CD;
+}
+
+.color-pink {
+    background-color: #DD008B; 
 }
