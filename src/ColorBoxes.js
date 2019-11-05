@@ -4,35 +4,18 @@ import './ColorBoxes.css';
 
 class ColorBoxes extends Component {
     
-    static defaultProps = {
-        color: ['red','orange','gold','yellow','lime','green','sky','blue','purple','pink']
-    }
-
-    constructor(props) {
-        super(props);
-    }
-
-    colorRandom() {
-        return this.props.color[Math.floor(Math.random() * this.props.color.length)]
-    }
-
 
     render() { 
 
+        const colorBoxArray = [<ColorBox/>, <ColorBox/>, <ColorBox/>, <ColorBox/>, <ColorBox/>, <ColorBox/>, <ColorBox/>, <ColorBox/>, <ColorBox/>, <ColorBox/>]; 
+
+        const iterator = colorBoxArray.map( component => component)
+
+
+
         return (
             <div className='ColorBoxes'>
-                <ColorBox color={this.colorRandom()}/>
-                <ColorBox color={this.colorRandom()}/>
-                <ColorBox color={this.colorRandom()}/>
-                <ColorBox color={this.colorRandom()}/>
-                <ColorBox color={this.colorRandom()}/>
-                <ColorBox color={this.colorRandom()}/>
-                <ColorBox color={this.colorRandom()}/>
-                <ColorBox color={this.colorRandom()}/>
-                <ColorBox color={this.colorRandom()}/>
-                <ColorBox color={this.colorRandom()}/>
-                <ColorBox color={this.colorRandom()}/>
-                <ColorBox color={this.colorRandom()}/>
+                {iterator}
             </div>
         )
     }
