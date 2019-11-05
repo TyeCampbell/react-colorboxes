@@ -16,25 +16,23 @@ class ColorBox extends Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
+    //randomly selects a color from the defaultProps array 
     colorRandom() {
         return this.props.color[Math.floor(Math.random() * this.props.color.length)]
     }
 
+    // changes current color into a new color without changing to the same color 
     changeColor() {
-
-        //create array without the current color in it. using filter?
+        //create array without the current color in it using filter
         const withoutCurrentColorArray = this.props.color.filter(color => color !== this.state.color); 
 
-        // random over the new array 
+        // random selct color over the new array 
         const newColor = withoutCurrentColorArray[Math.floor(Math.random() * withoutCurrentColorArray.length)]; 
+        
         // set the state based on the new selection
-
-        console.log(newColor);
-
         this.setState({
             color: newColor,
-        })
-    
+        }) 
     }
 
     handleClick(e) {
@@ -43,6 +41,7 @@ class ColorBox extends Component {
 
     render() {
         
+        //sets CSS color for the div 
         let color = 'color-' + this.state.color;
         
         return (
