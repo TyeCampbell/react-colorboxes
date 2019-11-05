@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <ColorBoxes/>
+      <ColorBoxes boxes={24}/>
     </div>
   );
 }
