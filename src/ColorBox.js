@@ -4,7 +4,7 @@ import './ColorBox.css';
 class ColorBox extends Component {
     
     static defaultProps = {
-        color: ['red','orange','gold','yellow','lime','green','sky','blue','purple','pink']
+        color: ['#FF0D00', '#FF8500', '#FFBB00', '#FF3700', '#C6F900', '#38E800', '#00C1C1', '#1B11D0', '#6C09CD', '#DD008B']
     }
 
     constructor(props) {
@@ -40,12 +40,12 @@ class ColorBox extends Component {
     }    
 
     render() {
-        
-        //sets CSS color for the div 
-        let color = 'color-' + this.state.color;
-        
+        // render div in the color that is selected in state 
         return (
-            <div onClick={this.handleClick} className={`ColorBox ${color}`}>
+            <div 
+                onClick={this.handleClick} 
+                className='ColorBox' 
+                style={{backgroundColor: this.state.color}}>
             </div>
         )
     }
