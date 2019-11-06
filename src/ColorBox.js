@@ -4,10 +4,6 @@ import './ColorBox.css';
 
 class ColorBox extends Component {
     
-    static defaultProps = {
-        color: ['#FF0D00', '#FF8500', '#FFBB00', '#FF3700', '#C6F900', '#38E800', '#00C1C1', '#1B11D0', '#6C09CD', '#DD008B']
-    }
-
     constructor(props) {
         super(props);
         this.state = {
