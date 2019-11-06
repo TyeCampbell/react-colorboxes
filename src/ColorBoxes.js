@@ -10,16 +10,13 @@ class ColorBoxes extends Component {
 
     render() { 
 
-        // colorbox emplty array 
         let colorBoxArray = []; 
 
-        // loops how many ColorBox components are needed in the array
         for (let i = 0; i < this.props.boxes; i++) {
            colorBoxArray = colorBoxArray.concat(<ColorBox key={i}/>)
         }
 
-        // maps over the array for the amount of boxes called for
-         const colorBoxes = colorBoxArray.map( component => component)
+        const colorBoxes = colorBoxArray.map( component => component)
 
         return (
             <div className='ColorBoxes'>

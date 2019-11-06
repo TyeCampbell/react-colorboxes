@@ -16,15 +16,11 @@ class ColorBox extends Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
-    // changes current color into a new color without changing to the same color 
     changeColor() {
-        //create array without the current color in it using filter
         const withoutCurrentColorArray = this.props.color.filter(color => color !== this.state.color); 
 
-        // random selct color over the new array 
         const newColor = choice(withoutCurrentColorArray); 
         
-        // set the state based on the new selection
         this.setState({
             color: newColor,
         }) 
@@ -35,7 +31,6 @@ class ColorBox extends Component {
     }    
 
     render() {
-        // render div in the color that is selected in state 
         return (
             <div 
                 onClick={this.handleClick} 
