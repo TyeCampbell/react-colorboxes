@@ -18,10 +18,12 @@ Here’s some inspiration:
 
 ![Preview of my final project - color boxes changing](docs/myColors.gif)
 
+[Click here](https://tyecampbell-colorboxes.netlify.com) to preview this project in your browser. 
+
 ##### What I Learned
 
 I learned that I could directly style the component with inline styling with JSX. A helpers.js file helps clean up code with reuseable functions, in this case a random array selector. Also I understand the issue with trying to pass an onClick event to the child component and see how there has to be a better method to handle this. 
 
 
 
-:thumbsup: *Thanks for checking out my work on GitHub! For more about me find me on Twitter @TyeDev or vist my personal website at www.TyeCampbell.com.*
+:thumbsup: *Thanks for checking out my work on GitHub! For more about me find me on Twitter [@TyeDev](https://twitter.com/tyedev) or vist my personal website [TyeCampbell.com](www.TyeCampbell.com).*
